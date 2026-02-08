@@ -4,197 +4,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- For icons -->
+    <title>Keshav Kumar - Software Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav id="navbar">
-            <div class="nav-container">
-                <h1 class="logo">Portfolio</h1>
-                <ul class="nav-links">
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#performance" class="nav-link">Performance</a></li>
-                    <li><a href="#goals" class="nav-link">Goals</a></li>
-                    <li><a href="#qualifications" class="nav-link">Qualifications</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+    <!-- Fixed Navbar -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <h1>Portfolio Web</h1>
             </div>
-        </nav>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
     </header>
 
     <!-- Main Content -->
     <main>
-        <!-- Home Section -->
-        <section id="home" class="section hero">
-            <div class="hero-content">
-                <h1 class="animated-name" id="animated-name"></h1>
-                <p class="tagline">Full-Stack Developer | Passionate about Code & Innovation</p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn glow-red">View Projects</a>
-                    <a href="#contact" class="btn glow-blue">Contact Me</a>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-left">
+                    <h2>Hi, I am <span class="accent">Keshav Kumar</span></h2>
+                    <p class="role">Software Developer</p>
+                    <p class="description">
+                        Passionate about creating stunning, user-centric web experiences. I specialize in modern
+                        frontend technologies to bring ideas to life with clean, efficient code.
+                    </p>
+                    <a href="#contact" class="cta-button">Contact Me</a>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.linkedin.com/in/keshav-kumar-649385370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="social-link" data-tooltip="LinkedIn"><i>Linkedin</i></a>
+                        <a target="_blank" href="https://github.com/keshavpc8957-byte" class="social-link" data-tooltip="GitHub"><i>Github</i></a>
+                        <a target="_blank" href="#" class="social-link" data-tooltip="Telegram"><i>✈️</i></a>
+                    </div>
+                    <div class="scroll-indicator">
+                        <span>Scroll Down</span>
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+                <div class="hero-right">
+                    <div class="profile-container">
+                        <img src="my photo.jpeg" alt="Profile Image" class="profile-image">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Me Section -->
+        <!-- About Section -->
         <section id="about" class="section">
             <div class="container">
                 <h2>About Me</h2>
-                <div class="about-content">
-                    <div class="profile-image">
-                        <img src="my photo.jpeg" alt="Profile Image"> <!-- Replace with your image -->
-                    </div>
-                    <div class="bio">
-                        <p>My name is Keshav Kumar. I am a motivated and detail oriented student with a strong interest
-                            in software development and problem solving. I am currently pursuing
-                            Bachelor of Computer Applications from KCNIT COLLEGE OF EDUCATION BANDA ,
-                            Bundelkhand University , Jhansi.
+                <p>
+                    My name is Keshav Kumar. I am a motivated and detail oriented student with a strong interest
+                    in software development and problem solving. I am currently pursuing
+                    Bachelor of Computer Applications from KCNIT COLLEGE OF EDUCATION BANDA ,
+                    Bundelkhand University , Jhansi.
 
-                            I have a solid foundation in programming concepts, data structures, and logical thinking. I
-                            enjoy learning new technologies and improving my skills through practice and real world
-                            projects. I am comfortable working with languages like C / C++ / Python
-                            and have basic knowledge of DSA, OOPs, and web development.
+                    I have a solid foundation in programming concepts, data structures, and logical thinking. I
+                    enjoy learning new technologies and improving my skills through practice and real world
+                    projects. I am comfortable working with languages like C / C++ / Python
+                    and have basic knowledge of DSA, OOPs, and web development.
 
-                            I am passionate about building efficient solutions and continuously growing as a software
-                            developer. My goal is to work in a challenging environment where I can apply my skills,
-                            learn from experienced professionals, and contribute to meaningful projects.</p>
-                        <h3>Skills</h3>
-                        <div class="skills">
-                            <div class="skill">
-                                <span>C languages</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-width="60%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>JavaScript</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-width="10%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>CSS</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-width="20%"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>HTML</span>
-                                <div class="progress-bar">
-                                    <div class="progress" data-width="40%"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <h3>Tech Stack</h3>
-                        <div class="tech-stack">
-                            <i class="fab fa-js glow-yellow"></i>
-                            <i class="fab fa-react glow-blue"></i>
-                            <i class="fab fa-node-js glow-green"></i>
-                        </div>
-                    </div>
-                </div>
+                    I am passionate about building efficient solutions and continuously growing as a software
+                    developer. My goal is to work in a challenging environment where I can apply my skills,
+                    learn from experienced professionals, and contribute to meaningful projects.
+                </p>
             </div>
         </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
+        <!-- Skills Section -->
+        <section id="skills" class="section">
             <div class="container">
-                <h2>Projects</h2>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="js">JavaScript</button>
-                    <button class="filter-btn" data-filter="css">CSS</button>
-                </div>
-                <div class="projects-grid" id="projects-grid">
-                    <div class="project-card" data-category="js">
-                        <h3>Project 1</h3>
-                        <p>A dynamic web app built with JS.</p>
-                        <p>Tech: JS, HTML</p>
-                        <div class="project-links">
-                            <a href="#" class="btn glow-green">Live Demo</a>
-                            <a href="#" class="btn glow-blue">GitHub</a>
-                        </div>
-                    </div>
-                    <div class="project-card" data-category="css">
-                        <h3>Project 2</h3>
-                        <p>Responsive design showcase.</p>
-                        <p>Tech: CSS, HTML</p>
-                        <div class="project-links">
-                            <a href="#" class="btn glow-green">Live Demo</a>
-                            <a href="#" class="btn glow-blue">GitHub</a>
-                        </div>
-                    </div>
-                    <!-- Add more projects as needed -->
-                </div>
-            </div>
-        </section>
-
-        <!-- Performance Section -->
-        <section id="performance" class="section">
-            <div class="container">
-                <h2>Performance</h2>
-                <div class="stats">
-                    <div class="stat">
-                        <h3 class="counter" data-target="5">0</h3>
-                        <p>Projects Completed</p>
-                    </div>
-                    <div class="stat">
-                        <h3 class="counter" data-target="10">0</h3>
-                        <p>Hours Coded</p>
-                    </div>
-                </div>
-                <div class="charts">
-                    <div class="chart">
-                        <span>Problem Solving</span>
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML & CSS</h3>
                         <div class="progress-bar">
-                            <div class="progress" data-width="10%"></div>
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>C language</h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>C++ </h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Digital Marketing </h3>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Goals Section -->
-        <section id="goals" class="section">
+        <!-- Services Section -->
+        <section id="services" class="section">
             <div class="container">
-                <h2>Goals</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Short-Term</h3>
-                        <p>Complete Besic DSA</p>
+                <h2>Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <h3>Web Development</h3>
+                        <p>Building responsive, modern websites tailored to your needs.</p>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Long-Term</h3>
-                        <p>Launch my own startup.</p>
+                    <div class="service-card">
+                        <h3>Consulting</h3>
+                        <p>Providing expert advice on frontend best practices.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Qualifications Section -->
-        <section id="qualifications" class="section">
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
             <div class="container">
-                <h2>Qualifications</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>2025 - BCA </h3>
-                        <p>Bundelkhand University</p>
+                <h2>Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250?text=Project+1" alt="Project 1">
+                        <div class="overlay">
+                            <h3>Project 1</h3>
+                            <p>A stunning web app built with React.</p>
+                        </div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>2025 - Digital Marketing</h3>
-                        <p>Certification in Digital Marketing Training</p>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250?text=Project+2" alt="Project 2">
+                        <div class="overlay">
+                            <h3>Project 2</h3>
+                            <p>E-commerce site with modern UI.</p>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://via.placeholder.com/400x250?text=Project+3" alt="Project 3">
+                        <div class="overlay">
+                            <h3>Project 3</h3>
+                            <p>Portfolio website like this one.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -204,18 +177,12 @@
         <section id="contact" class="section">
             <div class="container">
                 <h2>Contact</h2>
-                <form id="contact-form">
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="message" placeholder="Message" required></textarea>
-                    <button type="submit" class="btn glow-red">Send</button>
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
                 </form>
-                <div class="social-links">
-                    <a target="_blank" href="https://github.com/keshavpc8957-byte" class="social-link glow-red"><i class="fab fa-github"></i></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/keshav-kumar-649385370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                        class="social-link glow-blue"><i class="fab fa-linkedin"></i></a>
-                    <a target="_blank" href="#" class="social-link glow-green"><i class="fab fa-twitter"></i></a>
-                </div>
             </div>
         </section>
     </main>
@@ -223,6 +190,4 @@
     <script src="script.js"></script>
 </body>
 
-
 </html>
-
