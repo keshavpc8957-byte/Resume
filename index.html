@@ -10,29 +10,38 @@
 </head>
 
 <body>
-    <!-- Fixed Navbar -->
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-logo">
-                <h1>Portfolio Web</h1>
-            </div>
-            <nav class="navbar-menu">
-                <ul>
-                    <li><a href="#home" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="navbar-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <!-- Navbar -->
+<header class="navbar">
+    <div class="navbar-container">
+
+        <!-- Logo -->
+        <div class="navbar-logo">
+            <h1>Keshav Kumar</h1>
         </div>
-    </header>
+
+        <!-- Menu -->
+        <nav class="navbar-menu" id="navMenu">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Mobile Toggle -->
+        <div class="navbar-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+</header>
+
 
     <!-- Main Content -->
     <main>
@@ -48,9 +57,11 @@
                     </p>
                     <a href="#contact" class="cta-button">Contact Me</a>
                     <div class="social-icons">
-                        <a target="_blank" href="https://www.linkedin.com/in/keshav-kumar-649385370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        <a target="_blank"
+                            href="https://www.linkedin.com/in/keshav-kumar-649385370?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                             class="social-link" data-tooltip="LinkedIn"><i>Linkedin</i></a>
-                        <a target="_blank" href="https://github.com/keshavpc8957-byte" class="social-link" data-tooltip="GitHub"><i>Github</i></a>
+                        <a target="_blank" href="https://github.com/keshavpc8957-byte" class="social-link"
+                            data-tooltip="GitHub"><i>Github</i></a>
                         <a target="_blank" href="#" class="social-link" data-tooltip="Telegram"><i>✈️</i></a>
                     </div>
                     <div class="scroll-indicator">
@@ -127,6 +138,48 @@
             </div>
         </section>
 
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications</h2>
+
+                <div class="certification-grid">
+
+                    <!-- Certificate 1 -->
+                    <div class="cert-card">
+                        <!-- <img src="certificate1.jpg" alt="Certificate 1"> -->
+                        <h3>Excel using Chat GPT Certification</h3>
+                        <p>Issued by simplilearn (Microsoft)</p>
+                        <!-- OR Google Drive Link -->
+
+                        <a href="https://www.linkedin.com/posts/keshav-kumar-649385370_excel-automation-chatgpt-activity-7428438053842583552-qK23?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFvkUVkBkBelVf_t8GAj4tnJVBlOkdCJNwo"
+                            target="_blank" class="cert-btn">
+                            View Certificate
+                        </a>
+                        <!-- Button to View Image in New Tab -->
+                        <!-- <a href="certificate1.jpg" target="_blank" class="cert-btn">
+                View Certificate
+            </a> -->
+
+
+                    </div>
+                    <div class="cert-card">
+                        <!-- <img src="certificate1.jpg" alt="Certificate 1"> -->
+                        <h3>Digital Marketing training Certification</h3>
+                        <p>Issued by ICEIT</p>
+                        <!-- OR Google Drive Link -->
+
+                        <a href="https://www.linkedin.com/posts/keshav-kumar-649385370_digitalmarketing-learningjourney-skilldevelopment-activity-7409084505610915840-IWWL?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFvkUVkBkBelVf_t8GAj4tnJVBlOkdCJNwo"
+                            target="_blank" class="cert-btn">
+                            View Certificate
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
         <!-- Services Section -->
         <section id="services" class="section">
             <div class="container">
@@ -189,17 +242,13 @@
     </main>
 
     <script src="script.js"></script>
-    
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script>
-  (function () {
-    emailjs.init("bDmATeys6JC9FxxR_");
-  })();
-</script>
+    <script>
+        (function () {
+            emailjs.init("bDmATeys6JC9FxxR_");
+        })();
+    </script>
 
 </body>
 
 </html>
-
-
-
