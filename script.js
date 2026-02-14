@@ -4,7 +4,6 @@
 // ================================
 // DOM Element Selections
 // ================================
-const navbarToggle = document.querySelector('.navbar-toggle');
 const navbarMenu = document.querySelector('.navbar-menu');
 const navLinks = document.querySelectorAll('.navbar-menu a');
 const sections = document.querySelectorAll('.section');
@@ -13,21 +12,14 @@ const contactForm = document.querySelector('.contact-form');
 const navToggle = document.getElementById("navToggle");
 const navMenu = document.getElementById("navMenu");
 
-navToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-});
 
 
 // ================================
 // Mobile Hamburger Menu Toggle
 // ================================
-if (navbarToggle) {
-    navbarToggle.addEventListener('click', () => {
-        navbarMenu.classList.toggle('active');
-        navbarToggle.classList.toggle('active');
-    });
-}
-
+        navToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("active");
+        });
 // ================================
 // Smooth Scrolling for Navbar Links
 // ================================
