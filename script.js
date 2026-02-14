@@ -10,6 +10,13 @@ const navLinks = document.querySelectorAll('.navbar-menu a');
 const sections = document.querySelectorAll('.section');
 const progressBars = document.querySelectorAll('.progress');
 const contactForm = document.querySelector('.contact-form');
+const navToggle = document.getElementById("navToggle");
+const navMenu = document.getElementById("navMenu");
+
+navToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
 
 // ================================
 // Mobile Hamburger Menu Toggle
@@ -162,3 +169,4 @@ if (contactForm) {
         });
     });
 }
+
